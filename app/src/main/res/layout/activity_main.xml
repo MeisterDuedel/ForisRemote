@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnEnter"
+        app:layout_constraintTop_toBottomOf="@+id/btnOffTimer" />
+
+    <Button
+        android:id="@+id/btnPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/btnPC"
+        android:text="@string/btnPC"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btnHDMI"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHDMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/btnHDMI"
+        android:text="@string/btnHDMI"
+        app:layout_constraintEnd_toStartOf="@+id/btnPower"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnPC"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/btnPower"
+        android:text="@string/btnPower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnHDMI"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/lightButtons"
+        android:text="@string/btnMode"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btnUP"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPC" />
+
+    <Button
+        android:id="@+id/btnUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnUp"
+        app:layout_constraintEnd_toStartOf="@+id/btnOffTimer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMode"
+        app:layout_constraintTop_toBottomOf="@+id/btnHDMI" />
+
+    <Button
+        android:id="@+id/btnOffTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/lightButtons"
+        android:text="@string/btnOffTimer"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnUP"
+        app:layout_constraintTop_toBottomOf="@+id/btnPower" />
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnLeft"
+        app:layout_constraintEnd_toStartOf="@+id/btnEnter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMode" />
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/lightButtons"
+        android:text="@string/btnEnter"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnDown"
+        app:layout_constraintEnd_toStartOf="@+id/btnRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnUP" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/lightButtons"
+        android:text="@string/btnMenu"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btnDown"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeft" />
+
+    <Button
+        android:id="@+id/btnDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnDown"
+        app:layout_constraintEnd_toStartOf="@+id/btnReturn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMenu"
+        app:layout_constraintTop_toTopOf="@+id/btnMenu" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/lightButtons"
+        android:text="@string/btnReturn"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnDown"
+        app:layout_constraintTop_toBottomOf="@+id/btnRight" />
+
+    <Button
+        android:id="@+id/btnEcoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/lightButtons"
+        android:text="@string/btnEcoView"
+        android:textColor="@color/btnEcoView"
+        app:layout_constraintEnd_toStartOf="@+id/btnSize"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenu" />
+
+    <Button
+        android:id="@+id/btnSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/lightButtons"
+        android:text="@string/btnSize"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btnVolUp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnEcoView"
+        app:layout_constraintTop_toBottomOf="@+id/btnDown" />
+
+    <Button
+        android:id="@+id/btnVolUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnVolUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSize"
+        app:layout_constraintTop_toBottomOf="@+id/btnReturn" />
+
+    <Button
+        android:id="@+id/btnSmart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/black"
+        android:text="@string/btnSmart"
+        app:layout_constraintEnd_toStartOf="@+id/btnMute"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEcoView" />
+
+    <Button
+        android:id="@+id/btnMute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnMute"
+        app:layout_constraintEnd_toStartOf="@+id/btnVolDown"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSmart"
+        app:layout_constraintTop_toBottomOf="@+id/btnSize" />
+
+    <Button
+        android:id="@+id/btnVolDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnVolDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMute"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolUp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ForisRemote</string>
+    <string name="btnPC">PC</string>
+    <string name="btnHDMI">HDMI</string>
+    <string name="btnPower">POWER</string>
+    <string name="btnMode">MODE</string>
+    <string name="btnUp">UP</string>
+    <string name="btnOffTimer">OFFTIMER</string>
+    <string name="btnLeft">BRIGHT -\nLEFT</string>
+    <string name="btnEnter">Enter</string>
+    <string name="btnRight">BRIGHT +\nRIGHT</string>
+    <string name="btnEcoView">EcoView</string>
+    <string name="btnMenu">MENU</string>
+    <string name="btnDown">DOWN</string>
+    <string name="btnReturn">RETURN</string>
+    <string name="btnSize">SIZE</string>
+    <string name="btnVolUp">Vol. +</string>
+    <string name="btnSmart">Smart</string>
+    <string name="btnMute">MUTE</string>
+    <string name="btnVolDown">Vol. -</string>
+    <string name="noIRBlaster">This App only works on devices with an IR Blaster!</string>
+    <string name="noIRBlasterTitle">No IR Blaster</string>
+    <string name="frequencyNotSupported">The IR Blaster doesn\'t support the required frequency!</string>
+    <string name="frequencyNotSupportedTitle">"Frequency not supported"</string>
+</resources>
